@@ -1,0 +1,580 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+/* CSS Document */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Bai Jamjuree", sans-serif;
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+}
+
+/*
+===================Typography===================
+*/
+
+header {
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	color: rgba(76, 84, 92, 1);
+}
+
+h1 {
+	font-size: 2.875rem;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: 1rem;
+	color: rgba(158, 171, 178, 1);
+	line-height: 30px;
+}
+
+.snippets-title,
+.clipboard-title,
+.workflow,
+.apps{
+	text-align: center;
+}
+
+.snippets-text,
+.clipboard-text,
+.workflow-text {
+	font-size: 1.125rem;
+	text-align: center;
+}
+
+.header-title {
+	letter-spacing: -0.75px;
+}
+
+.header-text {
+	letter-spacing: .15px;
+}
+
+.snippets-title {
+	letter-spacing: -0.586957px;
+}
+
+.snippets-text {
+	letter-spacing: 0.135px;
+}
+
+.snippets-features-title {
+	letter-spacing: -0.391304px;
+}
+
+.snippets-features-text {
+	letter-spacing: 0.12px;
+}
+
+.clipboard-title {
+	letter-spacing: -0.586957px;
+}
+
+.clipboard-text {
+	letter-spacing: 0.135px;
+}
+
+.workflow-title {
+	letter-spacing: -0.586957px;
+}
+
+.workflow-text {
+	letter-spacing: 0.135px;
+}
+
+.workflow-col-title {
+	letter-spacing: -0.391304px;
+}
+
+.workflow-col-text {
+	letter-spacing: 0.12px;
+}
+
+.apps-title {
+	letter-spacing: -0.586957px;
+}
+
+.apps-text {
+	letter-spacing: 0.135px;
+}
+
+.footer-text {
+	font-size: 1.125rem;
+	color: rgba(76, 84, 92, 1);
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1.125rem;
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: .5px;
+}
+
+.btn-primary {
+	background: rgba(38, 187, 164, 1);
+	box-shadow: 0px 10px 20px 0px rgba(137, 229, 199, 0.5033),
+			    0px -3px 0px 0px rgba(0, 0, 0, 0.1513) inset;
+	padding: .72em 2em;
+	border-radius: 28px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-accent:hover,
+.btn-accent:focus {
+	opacity: .8;
+}
+
+.btn-accent {
+	background: rgba(97, 116, 255, 1);
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.0988),
+		        0px -3px 0px 0px rgba(0, 0, 0, 0.1513) inset;
+	padding: .72em 2em;
+	border-radius: 28px;
+}
+
+/*
+===================Layout===================
+*/
+
+body {
+	background: url("../images/bg-header-desktop.png") top no-repeat;
+	background-size: 100%;
+}
+
+.columns {
+	display: flex;
+}
+
+.ai-fs {
+	align-items: flex-start;
+}
+
+.jc-sb {
+	justify-content: space-between;
+}
+
+.ai-c {
+	align-items: center;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.max-width {
+	 max-width: 1440px;
+	 margin: 0 auto; 
+}
+
+.container {
+	max-width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.header-logo {
+	margin-top: 8rem;
+	margin-bottom: 3.5rem;
+}
+
+.header-title{
+	margin-bottom: 1rem;
+}
+
+.header-text {
+	max-width: 45%;
+	margin: 0 auto;
+	margin-bottom: 3rem;
+}
+
+.btn {
+	margin-bottom: 9.375rem;
+}
+
+.btn-accent {
+	margin-left: 1rem;
+}
+
+.snippets-title {
+	margin-bottom: 1.1875rem;
+}
+
+.snippets-text {
+	max-width: 55%;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.snippets-features {
+	max-width: 99%;
+	margin: 0 auto;
+	position: relative;
+	right: 5%;
+}
+
+.snippets-features-image {
+	max-width: 100%;
+}
+
+.col-snippet-features {
+	margin-left: 6.875rem;
+	margin-top: 4.25rem;
+}
+
+.snippets-features-title {
+	margin-bottom: .5rem;
+}
+
+.snippets-features-text {
+	margin-bottom: 3.5rem;
+	max-width: 65%;
+}
+
+.snippets {
+	margin-bottom: 9.375rem;
+}
+
+.clipboard-title {
+	margin-bottom: 1.1875rem;
+}
+
+.clipboard-text {
+	margin-bottom: 6.875rem;
+}
+
+.clipboard-img {
+	max-width: 100%;
+	margin: 0 auto;
+	margin-bottom: 10.0625rem;
+}
+
+.workflow {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.workflow-title {
+	margin-bottom: 1.1875rem;
+}
+
+.workflow-text {
+	margin-bottom: 4.5rem;
+}
+
+.workflow-img {
+	margin-bottom: 2.75rem;
+}
+
+.workflow-col-title {
+	margin-bottom: 1rem;
+}
+
+.workflow-col-text {
+	margin: 0 auto;
+	margin-bottom: 9.375rem;
+	max-width: 82%;
+}
+
+.col-33 {
+	width: 33%;
+}
+
+.companies {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.company-img {
+	max-width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	margin-bottom: 9.375rem;
+}
+
+.apps-title {
+	margin-bottom: 1.1875rem;
+}
+
+.apps-text {
+	margin: 0 auto;
+	margin-bottom: 3rem;
+	max-width: 50%;
+}
+
+footer {
+	width: 100%;
+	height: 150px;
+	background: rgba(158, 171, 178, .1);
+}
+
+.footer-logo {
+	margin-left: 10.3125rem;
+	margin-right: 4rem;
+}
+
+.col-55 {
+	transform: scale(.45)
+}
+
+.col-footer {
+	margin-top: 2.25rem;
+	margin-right: 5rem;
+}
+
+.footer-text {
+	margin-bottom: .75rem;
+}
+
+.footer-links {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.footer-links:hover p,
+.footer-links:focus p{
+	color: rgba(38, 187, 164, 1);
+}
+
+.footer-socials {
+	margin-top: 3.9375rem;
+	margin-left: auto;
+	margin-right: 10.3125rem;
+}
+
+.footer-social-img {
+	margin-right: 1.5rem;
+}
+
+.footer-social-link {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+	filter: invert(57%) sepia(47%) saturate(639%) hue-rotate(121deg) brightness(98%) contrast(87%);
+}
+
+@media (max-width: 650px) {
+	body {
+		background: url("../images/bg-header-mobile.png") top no-repeat;
+		background-size: 100%;
+	}
+}
+
+@media (max-width: 1076px) {
+	.columns {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.header-title {
+		font-size: 2rem;
+	}
+	
+	.header-text {
+		font-size: 1rem;
+		max-width: 90%;
+	}
+	
+	.btn-wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.btn-primary {
+		margin-bottom: 2.125rem;
+	}
+	
+	.btn-accent {
+		margin-left: 0;
+		margin-bottom: 10rem;
+	}
+	
+	.snippets-title {
+		font-size: 1.75rem;
+		margin-bottom: 1rem;
+	}
+	
+	.snippets-text {
+		font-size: 1rem;
+		margin-bottom: 4.0625rem;
+		max-width: 90%;
+	}
+	
+	.snippets-features-image {
+		margin-bottom: 3.5rem;
+	}
+	
+	.col-snippet-features {
+		margin-left: 0;
+		margin-bottom: 5rem;
+	}
+	
+	.snippets-features-title {
+		font-size: 1.75rem;
+		text-align: center;
+		margin-bottom: .625rem;
+	}
+	
+	.snippets-features-text {
+		font-size: 1rem;
+		text-align: center;
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3rem;
+	}
+	.snippets-features {
+		max-width: 90%;
+		right: 0;
+}
+	
+	.clipboard-title {
+		font-size: 1.75rem;
+		margin-bottom: 1rem;
+	}
+	
+	.clipboard-text {
+		font-size: 1rem;
+		margin-bottom: 4rem;
+	}
+	
+	.clipboard-img {
+		margin-bottom: 8.125rem;
+	}
+
+	
+	.col-33 {
+		width: 90%;
+	}
+	
+	.workflow-title {
+		font-size: 1.75rem;
+		margin-bottom: .6875rem;
+	}
+	
+	.workflow-text {
+		font-size: 1rem;
+		margin-bottom: 5.625rem;
+	}
+	
+	.workflow-img {
+		margin-bottom: 2.5rem;
+	}
+		
+	.workflow-col-title {
+		margin-bottom: 1.125rem;
+	}
+	
+	.workflow-col-text {
+		margin-bottom: 3.5rem;
+		max-width: 85%;
+	}
+	
+	.workflow {
+		margin-bottom: 10rem;
+	}
+	
+	.company-img {
+		margin-bottom: 3.6875rem;
+	}
+	
+	.companies {
+		margin-bottom: 10rem;
+	}
+	
+	.apps-title {
+		font-size: 1.75rem;
+		margin-bottom: 1rem;
+	}
+	
+	.apps-text {
+		margin-bottom: 2.875rem;
+	}
+	
+	.footer-logo {
+		margin: 3.25rem auto 2.5rem auto;
+	}
+	
+	.col-footer {
+		margin: 0 auto;
+	}
+
+	.footer-text {
+		margin-bottom: 1.25rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.footer-socials {
+		margin: 3.125rem auto;
+		padding-left: 3rem;
+	}
+	
+	.footer-social-img {
+		margin-right: 2.5rem;
+	}
+
+	footer {
+		height: 100%;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
